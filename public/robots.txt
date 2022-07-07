@@ -1,0 +1,5 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+https://github.com/ZainRk/React-Admin-Dashboard-public/blob/master/src/components/Updates/Updates.jsx

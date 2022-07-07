@@ -1,0 +1,38 @@
+.updates{
+    width: 100%;
+    max-width: 300px;
+    background: #fff;
+    border-radius: .75rem;
+    padding:1rem;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--dark-text);
+    font-size: 13px;
+}
+.update{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+}
+.update>img{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.update span{
+    font-size: .75rem;
+    font-family: var(--bdy-font-family);
+    padding-bottom: -1rem;
+}
+.notification>div>span:nth-of-type(1){
+    font-weight: 700;
+}
+@media (max-width:960px){
+    .update>img{
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+    .updates{
+        padding: .75rem;
+    }
+}

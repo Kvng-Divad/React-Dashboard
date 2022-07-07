@@ -1,0 +1,23 @@
+.cards{
+    display: flex;
+    gap: .75rem;
+}
+.cardscontainer{
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .cards{
+      flex-direction: column;
+    }
+    .cardscontainer{
+      height: 9rem;
+    }
+  }
+  
+  @media (max-width: 768px)
+  {
+    .cards{
+      width: 90%;
+    }
+  }

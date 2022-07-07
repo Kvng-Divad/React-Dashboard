@@ -1,0 +1,131 @@
+.compactcard{
+    display: flex;
+    flex: 1;
+    min-height: 7rem !important;
+    height: 9rem;
+    border-radius: .75rem;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+}
+.compactcard:hover{
+    box-shadow: none !important;
+}
+
+.radialbar{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.radialbar>span{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--bdy-font-family-alt);
+}
+
+.CircularProgressbar{
+    width: 4rem !important;
+    overflow: visible;
+}
+.CircularProgressbar-path{
+    stroke: #fff !important;
+    stroke-width: .65rem !important;
+    filter: drop-shadow(0 4px 6px rgba(255, 255, 255, 0.624));
+}
+.CircularProgressbar-trail{
+    display: none;
+}
+.CircularProgressbar-text{
+    font-family: var(--bdy-font-family-alt3);
+    font-size: 1rem;
+    font-weight: bold;
+    fill: #fff !important;
+}
+
+
+.detail{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.detail>span:nth-child(2){
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.detail>span:nth-child(3){
+    font-size: .75rem;
+    font-weight: 600;
+    font-family: var(--bdy-font-family);
+}
+
+
+
+.expandedcard{
+    position: absolute;
+    width: 60%;
+    height: 70vh;
+    z-index: 10;
+    left: 13rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.expandedcard >span:nth-of-type(1){
+ font-size: 1.5rem;
+ font-weight: bold;
+ text-shadow: 0 0 15px white;
+ font-family: var(--bdy-font-family-alt);
+}
+.expandedcard >span:nth-of-type(2){
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(230, 227, 227);
+    font-family: var(--bdy-font-family-alt);
+}
+.chartcontainer{
+    width: 70%;
+}
+.apexcharts-yaxis-label{
+    fill: #fff !important;
+    font-family: var(--bdy-font-family-alt3) !important;
+    font-weight: 500 !important;
+}
+.apexcharts-xaxis-label{
+    fill: #fff !important;
+    font-family: var(--bdy-font-family-alt3) !important;
+    font-weight: 500 !important;
+}
+
+
+@media (max-width: 1400px) {
+    .expandedcard {
+      top: 2rem;
+      height: 75vh;
+      left: 5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .expandedcard {
+      top: 8rem;
+      height: 50%;
+      left: 25px;
+      width: 80%;
+    }
+    .chartcontainer{
+        width: 90%;
+    }
+    .expandedcard >span:nth-of-type(2){
+        margin-top: -.5rem;
+    }
+  }
