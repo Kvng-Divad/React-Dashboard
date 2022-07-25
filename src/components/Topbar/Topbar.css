@@ -1,6 +1,6 @@
 .topbar{
     display: flex;
-    padding: 1rem 3rem;
+    padding:  1rem 3rem 1rem 4rem;
     justify-content: space-between;
 }
 .topRight{
@@ -22,4 +22,9 @@
 .canvas-header h3{
     margin: auto;
     text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .Canvas{
+        width: 75% !important;
+    }
 }

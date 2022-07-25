@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     gap:.5rem;
-    padding: .5rem;
+    padding:.5rem;
 }
 .update>img{
     width: 3rem;
@@ -34,4 +34,11 @@
     font-family: var(--bdy-font-family-alt);
     font-size: .75rem;
 }
-
+@media screen and (max-width: 768px) {
+    .updates{
+        padding: .25rem;
+    }
+    .update{
+        padding: .25rem 0;
+    }
+}

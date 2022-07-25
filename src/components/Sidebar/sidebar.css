@@ -90,11 +90,7 @@
   .bars2{
     display: flex;
     position: relative;
-    background:var(--bg-color-glass);
-    padding: 6px;
-    margin-top: .75rem;
-    width: 2.25rem;
-    border-radius: 10px;
+    margin-top: 1rem;
     z-index:11;
   }
   .sidebar{
@@ -109,7 +105,7 @@
     z-index: 9;
     background: var(--cont-color);
     width: 50%;
-    min-width: 12rem;
+    min-width: 13rem;
     padding-right: 1rem;
     height: 100%;
   }
@@ -126,11 +122,7 @@
   .bars{
     display: flex;
     position: fixed;
-    top:2rem;
-    left:60%;
-    background:var(--bg-color-glass);
-    padding:6px;
-    border-radius: 10px;
+    top:1.65rem;
     z-index:11;
   }
   .close{
