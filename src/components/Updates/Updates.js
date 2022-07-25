@@ -12,16 +12,16 @@ const Updates = () => {
                 <div className="update">
                     <img src={update.img} alt='profile'/>
                     <div className="notification">
-                        <div>
                             <span>{update.name}</span>
                             <span> {update.noti}</span>
-                        </div>
                             <span>{update.time}</span>
-                    </div>
-                    
+                    </div>  
                 </div>
+                
             )
         })}
+
+        <button className="btn">See All</button>
     </div>
   )
 }

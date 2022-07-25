@@ -94,6 +94,22 @@ export const CardsData =[
             },
         ],
     },
+    {
+        title: "Interest",
+        color: {
+           background: "var(--card-color4)",
+            boxshadow: "var(--box-shadow)",
+        },
+        barValue: 50,
+        value: "4,900",
+        icon: UilMoneyWithdrawal,
+        series: [
+            {
+                name: "Interest",
+                data: [50, 30 , 60, 80, 48, 50, 75, 100],
+            },
+        ],
+    },
     
 ]
 
@@ -113,8 +129,20 @@ export const UpdatesData = [
     },
     {
       img: img3,
-      name: "Iron Man",
+      name: "Irene Clerk ",
       noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
-      time: "2 hours ago",
+      time: "1 hour ago",
     },
+    {
+        img: img2,
+        name: "Jane Bella",
+        noti: "has order a box of nasco banana flakes.",
+        time: "1hr 30 minutes ago",
+      },
+      {
+        img: img1,
+        name: "Philip Doe",
+        noti: "has received A bottle of butterscotch wine.",
+        time: "2hr 30 minutes ago",
+      },
   ];

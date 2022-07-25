@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 2rem 0 0 1rem;
+  padding-left: 1rem;
   transition: all .3s ease;
 }
 .logo{
@@ -17,8 +17,9 @@
   font-family: var(--bdy-font-family-alt3);
 }
 .logo img{
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
 }
 .logo span span{
   color: var(--dark-text);
@@ -46,6 +47,10 @@
   color: var(--white-text);
   font-weight: 600;
   font-family: var(--bdy-font-family-alt) ;
+  text-decoration: none;
+}
+.link:hover{
+  color: var(--white-text);
 }
 .active{
   background: var(--active-item);
@@ -55,14 +60,14 @@
   content: "";
   width: 8px;
   height: 100%;
-  background: var(--dark-text);
+  background: var(--white-text);
 }
 
 .bars{
   display: none;
 }
 .bars2{
-display: none;
+  display: none;
 }
 
 
@@ -86,14 +91,14 @@ display: none;
     display: flex;
     position: relative;
     background:var(--bg-color-glass);
-    padding:6px;
+    padding: 6px;
+    margin-top: .75rem;
     width: 2.25rem;
     border-radius: 10px;
-    z-index: 11;
+    z-index:11;
   }
   .sidebar{
     width: 100%;
-    padding-right: 1rem;
     height: 100%;
   }
 }
@@ -121,12 +126,12 @@ display: none;
   .bars{
     display: flex;
     position: fixed;
-    top: 2rem;
+    top:2rem;
     left:60%;
     background:var(--bg-color-glass);
-    padding:8px;
+    padding:6px;
     border-radius: 10px;
-    z-index: 11;
+    z-index:11;
   }
   .close{
     left: -60%;

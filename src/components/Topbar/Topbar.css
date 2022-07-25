@@ -1,0 +1,25 @@
+.topbar{
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+}
+.topRight{
+    display: flex;
+    gap: .5rem;
+}
+.Canvas{
+    background: var(--cont-color);
+    border-radius: 10px;
+}
+.noti{
+    margin-top: 2.5rem;
+    height: 85%;
+}
+.canvas-header{
+    display: flex;
+    align-items: center;
+}
+.canvas-header h3{
+    margin: auto;
+    text-transform: uppercase;
+}

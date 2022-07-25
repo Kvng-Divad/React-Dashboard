@@ -1,8 +1,12 @@
 .Customer-review{
-width: 100%;
-min-width: 225px;
-height: 100%;
+    width: 95%;
+    min-width: 300px;
+    background-color: var(--cont-color);
+    padding: 1rem;
+    border-radius: 15px;
 }
-@media (max-width: 768px) {
-
+@media (max-width: 990px) {
+    .Customer-review{
+        min-width: 200px;
+    }
 }

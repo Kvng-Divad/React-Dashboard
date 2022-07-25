@@ -28,7 +28,7 @@ const Customer = () => {
               },
         
               fill: {
-                colors: ["#fff"],
+                colors: ["524f4f"],
                 type: "gradient",
               },
               dataLabels: {

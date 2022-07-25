@@ -2,7 +2,7 @@ import "./sidebar.css";
 
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.jpg'
 import { SidebarData } from "../Data/data"
 import { UilSignOutAlt, UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
@@ -39,6 +39,11 @@ const Sidebar = () => {
     variants={sidebarVariants}
     animate={window.innerWidth<=768?`${expanded}`:''}
     >
+
+       <div className="bars2" onClick={()=>setShow(!show)}>
+          <UilBars />
+        </div>
+        
         <div className="logo">
             <img src={logo} alt=""/>
             <span
@@ -46,9 +51,7 @@ const Sidebar = () => {
               E_<span>Shopy</span>.</span>
         </div>
 
-        <div className="bars2" onClick={()=>setShow(!show)}>
-          <UilBars />
-        </div>
+       
 
         <div className="menu">
             { SidebarData.map (( item, index) => {

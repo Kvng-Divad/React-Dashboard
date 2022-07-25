@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Kanit:wght@400;500;600;700;800;900&family=Lobster&family=Merriweather:wght@400;700;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
 @import url('https://cdn.syncfusion.com/ej2/material.css');
-
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 :root{
   --bg-color-glass: rgba(255, 255, 255, 0.164);
-  --bg-color-black: linear-gradient(160.37deg, #0f0c29, #302b63, #24243e);
+  --bg-color-black:  linear-gradient(to right, #1f1c2c, #928dab);
+  --cont-color: #1f1c2c;
   --skin-color:#000000;
   --skin-color1:#333399;  
   --skin-color2: #ff00cc ;
   --card-color3: linear-gradient(190.37deg, #000000, #434343);
+  --card-color4:  linear-gradient(to right, #ba8b02, #181818);
   --card-color1: linear-gradient(100.37deg, #302b63, #b21f1f);
   --card-color2: linear-gradient(260.37deg, #000000, #0f9b0f);
-  --active-item: #302b63; 
+  --active-item: #1f1c2c; 
 
   --white-text:#fff;
   --dark-text:#04040a;
@@ -80,28 +82,33 @@ input,button{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .main-container{
   width: 97%;
   height: 97%;
   display: grid;
+  
   background: var(--bg-color-glass);
   border-radius: 2rem;
-  grid-template-columns: max-content 1fr ;
-  overflow: hidden;
-  gap: 1rem;
+  grid-template-columns: max-content 1fr;
   padding-bottom:.5rem ;
+  margin: auto;
 }
 .main-container2{
   width: 97%;
   height: 97%;
   display: grid;
   border-radius: 2rem;
-  grid-template-columns: auto 20rem;
-  overflow: hidden;
-  gap: 1rem;
-  padding:1rem ;
+  grid-template-columns: 100%;
+  overflow:scroll;
   margin: auto;
+  padding:0 1rem;
+}
+.main{
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow:scroll;
 }
 .container{
   width: 97%;
@@ -109,30 +116,33 @@ input,button{
   display: grid;
   border-radius: 2rem;
   grid-template-columns: 1fr;
-  overflow: hidden;
-  gap:1rem;
   margin: auto;
+  overflow:scroll;
+  
 }
 .content{
   width: 97%;
   height: 97%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(1fr);
-  gap:3rem;
-  padding-top: 4.5rem;
+  grid-template-columns: 1fr;
+  padding: 4rem 1rem 1rem;
+  overflow:scroll;
 }
 
 
 .btn{
   padding: .75rem 2rem;
+  max-width:100%;
+  margin: auto;
   font-size: var(--font-size-nr);
   font-weight: var(--font-semibold);
-  background-color: var(--skin-color);
+  background-color: var(--white-text);
   text-transform: uppercase;
-  color: var(--white-text);
-  border: 1px solid var(--white-text);
+  color: var(--skin-color);
+  border-radius: 20px;
   cursor: pointer;
+  margin-top: 1rem;
 }
 .btn:hover{
   background:transparent ;
@@ -163,28 +173,5 @@ input,button{
 /* reuseable */
 
  
-@media (max-width: 1400px) {
-  .main-container2
-  {
-    grid-template-columns: 55% auto;
-    overflow-y: scroll;
-  } 
-  .container,
-  .content{
-    grid-template-columns:1fr;
-    overflow-y: scroll;
-  } 
-}
 
-@media (max-width: 768px) {
-  
-  .main-container2
-  {
-    grid-template-columns:1fr;
-    overflow:scroll;
-  }
-  .container,
-  .content{
-    overflow:scroll;
-  }
-}
+

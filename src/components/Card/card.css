@@ -107,7 +107,7 @@
 }
 
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     .expandedcard {
       top: 2rem;
       height: 75vh;
