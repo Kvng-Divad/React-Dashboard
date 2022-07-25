@@ -1,5 +1,6 @@
 .cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: .75rem;
 }
 .cardscontainer{
@@ -8,16 +9,16 @@
 
 @media (max-width: 1200px) {
     .cards{
-      flex-direction: column;
+      grid-template-columns: repeat(2, 1fr);
     }
     .cardscontainer{
       height: 9rem;
     }
   }
   
-  @media (max-width: 768px)
+  @media (max-width: 600px)
   {
     .cards{
-      width: 90%;
+      grid-template-columns: 1fr;
     }
   }

@@ -107,7 +107,7 @@
   .sidebar{
     position: fixed;
     z-index: 9;
-    background: rgba(255, 255, 255, 0.164);
+    background: var(--cont-color);
     width: 50%;
     min-width: 12rem;
     padding-right: 1rem;
@@ -140,6 +140,6 @@
     display: none;
     }
     .link{
-      color: var(--dark-text);
+      color: var(--white-text);
     }
 }

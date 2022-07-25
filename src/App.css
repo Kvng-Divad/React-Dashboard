@@ -88,7 +88,6 @@ input,button{
   width: 97%;
   height: 97%;
   display: grid;
-  
   background: var(--bg-color-glass);
   border-radius: 2rem;
   grid-template-columns: max-content 1fr;
@@ -100,9 +99,9 @@ input,button{
   height: 97%;
   display: grid;
   border-radius: 2rem;
-  grid-template-columns: 100%;
-  overflow:scroll;
+  grid-template-columns: 1fr;
   margin: auto;
+  overflow:scroll;
   padding:0 1rem;
 }
 .main{
@@ -118,7 +117,6 @@ input,button{
   grid-template-columns: 1fr;
   margin: auto;
   overflow:scroll;
-  
 }
 .content{
   width: 97%;
@@ -173,5 +171,16 @@ input,button{
 /* reuseable */
 
  
-
+@media (max-width:768px){
+  .main-container{
+    grid-template-columns: 1fr;
+  }
+  .container{
+    width: 100%;
+  }
+  .main-container2{
+    width: 98%;
+    justify-content: center;
+  }
+}
 
