@@ -12,7 +12,7 @@ const OrdersData = () => {
       <Header category="" title="Data" />
       <GridComponent
         id="gridcomp"
-        width="1fr"
+        width="auto"
         dataSource={ordersData}
         allowPaging
         allowSorting

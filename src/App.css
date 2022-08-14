@@ -110,8 +110,8 @@ input,button{
   overflow:scroll;
 }
 .container{
-  width: 97%;
-  height: 97%;
+  width: 100%;
+  height: 100%;
   display: grid;
   border-radius: 2rem;
   grid-template-columns: 1fr;
@@ -184,3 +184,9 @@ input,button{
   }
 }
 
+@media (max-width:500px){
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+}
