@@ -1,0 +1,24 @@
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: .75rem;
+}
+.cardscontainer{
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .cards{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .cardscontainer{
+      height: 9rem;
+    }
+  }
+  
+  @media (max-width: 600px)
+  {
+    .cards{
+      grid-template-columns: 1fr;
+    }
+  }

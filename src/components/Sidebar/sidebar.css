@@ -1,0 +1,140 @@
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 1rem;
+  transition: all .3s ease;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  gap: .5rem;
+}
+.logo span{
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  font-family: var(--bdy-font-family-alt4);
+}
+.logo img{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.logo span span{
+  color: var(--dark-text);
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.menuitem{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  transition: all .3s ease;
+  height: 2.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+.signout{
+  margin-top: 3rem;
+}
+.link{
+  font-size: var(--font-size-nr);
+  color: var(--white-text);
+  font-weight: 600;
+  font-family: var(--bdy-font-family-alt2) ;
+  text-decoration: none;
+}
+.link:hover{
+  color: var(--white-text);
+}
+.active{
+  background: var(--active-item);
+  margin-left: -1rem;
+}
+.active::before{
+  content: "";
+  width: 8px;
+  height: 100%;
+  background: var(--white-text);
+}
+
+.bars{
+  display: none;
+}
+.bars2{
+  display: none;
+}
+
+
+@media screen and (max-width: 1400px) {
+  
+  .title{
+    display: none;
+  }
+  .reveal{
+    display: block;
+    padding-right: .5rem;
+  }
+  .link{
+    padding-right: 2rem;
+  }
+  .logo{
+    padding-top: 1rem;
+  }
+  
+  .bars2{
+    display: flex;
+    position: relative;
+    margin-top: 1rem;
+    z-index:11;
+  }
+  .sidebar{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar{
+    position: fixed;
+    z-index: 9;
+    background: var(--cont-color);
+    width: 50%;
+    min-width: 13rem;
+    padding-right: 1rem;
+    height: 100%;
+  }
+  .link>span{
+    display: block;
+  }
+  .logo{
+    display: flex;
+  }
+  .menu .menuitem:last-child {
+    position: relative;
+    margin-top: 6rem;
+  }
+  .bars{
+    display: flex;
+    position: fixed;
+    top:1.65rem;
+    left: 1.5rem;
+    z-index:11;
+  }
+  .close{
+    left: -60%;
+  }
+  .bars2{
+    display: none;
+    }
+    .link{
+      color: var(--white-text);
+    }
+}

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Merienda:wght@400;700&family=Nunito:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+:root{
+  --bg-color-glass: rgba(255, 255, 255, 0.164);
+  --bg-color-black:linear-gradient(to right, #243949 0%, #517fa4 100%);;
+  --cont-color: #243949;
+  --skin-color:#243949;
+  --skin-color1:#333399;  
+  --skin-color2: #ff00cc ;
+  --card-color3: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  --card-color4: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  --card-color1:linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  --card-color2:linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  --active-item: #243949; 
+
+  --white-text:#fff;
+  --dark-text:#04040a;
+  --box-shadow: 0 .75rem 1.5rem rgba(3, 3, 3, 0.566);
+
+  --font-medium: 500;
+  --font-semibold:600;
+  --font-bold:800;
+  --font-E-bold:900;
+
+  --bdy-font-family: "nunito" , sans-serif;
+  --bdy-font-family-alt: "poppins" , sans-serif;
+  --bdy-font-family-alt2: "space grotesk" , sans-serif;
+  --bdy-font-family-alt3: 'Lobster Two', cursive;
+  --bdy-font-family-alt4: 'merienda', cursive;
+  
+  --font-size-m: 1.5rem;
+  --font-size-nr: 1rem;
+  
+}
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--bdy-font-family);
+  font-size: 16px;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: var(--font-size-nr);
+  background: var(--bg-color-black);
+  color: var(--white-text);
+  transition: all .3s ease;
+}
+
+::before, ::after
+{
+    box-sizing: border-box;
+}
+
+
+
+
+
+ul{
+  list-style: none;
+}
+
+input,button{
+  font-family: var(--bdy-font-family);
+  outline: none;
+  border: none;
+}
+
+/* reuseable */
+.body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.main-container{
+  width: 97%;
+  height: 97%;
+  display: grid;
+  background: var(--bg-color-glass);
+  border-radius: 2rem;
+  grid-template-columns: max-content 1fr;
+  padding-bottom:.5rem ;
+  margin: auto;
+}
+.main-container2{
+  width: 97%;
+  height: 97%;
+  display: grid;
+  border-radius: 2rem;
+  grid-template-columns: 1fr;
+  margin: auto;
+  overflow:scroll;
+  padding:0 1.5rem;
+}
+.main{
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow:scroll;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  border-radius: 2rem;
+  grid-template-columns: 1fr;
+  margin: auto;
+  overflow:scroll;
+}
+.content{
+  width: 97%;
+  height: 97%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 4rem 1rem 1rem;
+  overflow:scroll;
+}
+
+
+.btn{
+  padding: .5rem 1rem;
+  max-width:100%;
+  margin: auto;
+  font-size: var(--font-size-nr);
+  font-weight: var(--font-semibold);
+  background-color: var(--white-text);
+  text-transform: uppercase;
+  color: var(--skin-color);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.btn:hover{
+  background:transparent ;
+  color: var(--white-text);
+  transition: .3s;
+}
+.btn-alt{
+  background-color: var(--skin-color2);
+  color: var(--white-text);
+}
+.btn-alt:hover{
+  opacity: .5;
+  transition: .3s;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.profile{
+  display: flex;
+  justify-items: center;
+  
+}
+.profileimg{
+  width: 3rem;
+  height: 3rem;
+  gap: 1.5rem;
+}
+
+.orderimg>img{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+.orderimg{
+  display: flex;
+}
+.button{
+  padding: .25rem .5rem;
+  border-radius: .75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+
+.customerimage{
+  display: flex;
+  justify-items: center;
+}
+.customerimg{
+  width: 3rem;
+  height: 3rem;
+  gap: 1.5rem;
+}
+.customertext{
+  font-size: 12px !important;
+  font-family: var(--bdy-font-family-alt3) !important;
+  font-weight: 600;
+}
+.customerdata{
+  min-width: 800px;
+  overflow-x: scroll !important;
+}
+
+
+/* reuseable */
+
+ 
+@media (max-width:768px){
+  .main-container{
+    grid-template-columns: 1fr;
+  }
+  .container{
+    width: 100%;
+  }
+  .main-container2{
+    width: 98%;
+    justify-content: center;
+  }
+}
+
+@media (max-width:500px){
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+.maindash{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+h3{
+    padding: .5rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+

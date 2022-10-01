@@ -1,0 +1,7 @@
+.Customer-review{
+    width: 100%;
+    min-width: 270px;
+    background-color: var(--cont-color);
+    padding: 1rem;
+    border-radius: 15px;
+}

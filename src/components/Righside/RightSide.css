@@ -1,0 +1,19 @@
+.rightside{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin: auto;
+}
+
+@media (max-width: 990px) {
+    .rightside{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}
+
+
+
